@@ -1,0 +1,41 @@
+{
+  "name": "true-admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev-local": "vite",
+    "dev": "dotenv-vault pull development .env && npm run dev-local",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc",
+    "prepare": "husky install",
+    "pretty": "pretty-quick --staged"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.3",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "dotenv-vault": "^1.18.0",
+    "framer-motion": "^10.8.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.9.0",
+    "react-router-dom": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.6",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vite-plugin-pages": "^0.29.0"
+  }
+}

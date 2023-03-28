@@ -12,13 +12,12 @@ import {
 import React from "react";
 import { GradientBackground } from "../components/GradientBackground";
 
-export default function Login() {
+export default function Forgot() {
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const email = event.currentTarget.email.value;
-    const password = event.currentTarget.password.value;
 
-    console.log({ email, password });
+    console.log({ email });
   };
 
   return (
